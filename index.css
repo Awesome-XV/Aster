@@ -2,16 +2,17 @@ body {
     background: #000;
     color: #fff;
     padding: 20px;
-    font-family: sans-serif;
+    font-family: 'Contrail One', sans-serif;
     text-align: center;
   }
 
   h1 {
     color: #fff;
     font-size: 70px;
+      font-family: 'Contrail One', sans-serif;
   }
 
 header {
   color: #fff;
-  
+  font-family: 'Contrail One', sans-serif;
 }
