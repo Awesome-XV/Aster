@@ -1,45 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, shrink-to-fit=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-<head>
-	<meta charset="utf-8">
-	<script src="/js/all.js"></script>
+    <title>Vex 7</title>
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/png" href="assets/icon.png" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+  </head>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Funny Shooter 2 </title>
-	<meta name="robots" content="noindex,nofollow" />
-	<script>
-		window.config = {
-		loader: 'unity-2020',
-		debug: false,
-		maxRatio: 16 / 9,
-		minRatio: 9 / 16,
+  <body>
+    <div id="content"></div>
+    <div id="loader">Loading...</div>
+    <div id="orientation"></div>
+    <script src="/js/all.js"></script>
 
-		title: 'Funny Shooter 2',
-		thumbnail: '894abba63a6b23fed823f404831f444f.jpeg',
-		numScreenshots:  4 ,
+    <script type="text/javascript">
+      var _azerionIntegration = {
+        rtgEnabled: true,
+        lbEnabled: false,
+        fbType: "dummy",
+        alxType: "std",
+        af: false,
+        sa: false,
+        la: false,
+        bd: 0,
+        playBtn: true,
+        cp: false,
+      };
 
-		unityVersion: '2020.3.37f1',
-		unityWebglBuildUrl: '',
+      var libs = [];
 
-		fileSize:  33 ,
-		cachedDecompressedFileSizes: {
-			'FunnyShooter2_Poki.data.unityweb':  29010101 ,
-			'FunnyShooter2_Poki.framework.js.unityweb':  74477 ,
-			'FunnyShooter2_Poki.loader.js':  110821 ,
-			'FunnyShooter2_Poki.wasm.unityweb':  4670173 ,
-		},
-		"metadata": {"poki_template_version":1,"background_color":"#FFFFFF","background_filename":"FunnyShooter2_Poki.jpg","code_filename":"FunnyShooter2_Poki.wasm.unityweb","company_name":"GoGoMan","data_filename":"FunnyShooter2_Poki.data.unityweb","decompression_fallback":"Brotli","development_player":"false","framework_filename":"FunnyShooter2_Poki.framework.js.unityweb","height":"600","loader_filename":"FunnyShooter2_Poki.loader.js","product_name":"Funny Shooter 2","product_version":"1.0.1","splash_screen_style":"Dark","total_memory":"268435456","unity_version":"2020.3.37f1","use_data_caching":"true","use_threads":"false","use_wasm":"true","use_webgl_1_0":"true","use_webgl_2_0":"true","width":"960"}
-	};
-	</script>
-	<!-- will be copied to the resulting head //-->
-</head>
+      var gameName = "vex7.min.js";
 
-<body>
-	<script src="unity.js"></script>
-	<script src="poki-sdk.js"></script>
-	<!-- will be copied to the resulting body //-->
-	<!-- will also be copied to the resulting body //-->
-</body>
+      var enableAnalytics, azAdWrapper, _azFeedback;
 
+      //This all here is for cache busting;
+      function addScript(src, buster, callback) {
+        var s = document.createElement("script");
+        s.setAttribute("src", src + "?v=" + buster);
+        if (typeof callback === "function") {
+          s.onload = callback;
+        }
+        document.body.appendChild(s);
+      }
+
+      addScript("version.js", Date.now(), function () {
+        addScript(gameName, version, function () {});
+      });
+    </script>
+  </body>
 </html>
