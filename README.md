@@ -1,1 +1,0 @@
-# awesome-vx.github.io
