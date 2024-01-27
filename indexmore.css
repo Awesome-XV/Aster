@@ -12,12 +12,9 @@ h1 {
 
 nav {
   color: #fff;
-  display: flex;
-  padding: 105px;
-  width: 100%;
-  z-index: 1;
-  justify-content: center;
-  font-family: 'Contrail One', sans-serif;
+  text-align: center;
+    text-decoration: none;
+    font-family: 'Contrail One', sans-serif;
 }
 
 .credit {
