@@ -14,7 +14,7 @@ body {
 
    header {
   color: #fff;
-  background-color: var(--uibg);
+  background-color: gray;
   display: flex;
   padding: 0.7rem;
   width: 100%;
