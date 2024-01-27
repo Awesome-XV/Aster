@@ -15,7 +15,6 @@ body {
    nav {
   color: #fff;
   display: flex;
-  padding: 105px;
   width: 100%;
   z-index: 1;
   justify-content: center;
