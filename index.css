@@ -12,13 +12,13 @@ body {
       font-family: 'Contrail One', sans-serif;
   }
 
-  nav {
-    color: #fff;
-    text-align: center;
-      text-decoration: none;
-      font-family: 'Contrail One', sans-serif;
-      top: 0;
-      border-radius: 0 0 20px 20px;
-      position: fixed;
-      box-shadow: 0 5px 10px var(--uibg);
-  }
+   header {
+  color: #fff;
+  background-color: var(--uibg);
+  display: flex;
+  padding: 0.7rem;
+  width: 100%;
+  z-index: 1;
+  justify-content: center;
+  font-family: 'Contrail One', sans-serif;
+}
