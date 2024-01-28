@@ -1,0 +1,46 @@
+body {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    font-family: 'Contrail One', sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Contrail One', sans-serif;
+  }
+
+nav {
+    color: #fff;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Contrail One', sans-serif;
+}
+.game img, .suggest img {
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 1 / 1;
+}
+
+.game, .suggest {
+  width: 15%;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: var(--uibg);
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 5px var(--uibg);
+}
+
+* {
+  transition-duration: 0.5s;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  align-content: center;
+  text-align: center;
+  font-family: 'Contrail One', sans-serif;
+  color: var(--textcolor);
+}
