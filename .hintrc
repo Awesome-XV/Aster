@@ -6,6 +6,12 @@
     "meta-viewport": "off",
     "axe/language": "off",
     "meta-charset-utf-8": "off",
-    "axe/text-alternatives": "off"
+    "axe/text-alternatives": "off",
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
+    ]
   }
 }
