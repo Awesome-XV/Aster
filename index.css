@@ -20,3 +20,12 @@ body {
       margin-left: 20px;
       font-family: 'Contrail One', sans-serif;
   }
+
+  nav:visited {
+    color: #fff;
+    text-align: center;
+      text-decoration: none;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-family: 'Contrail One', sans-serif;
+  }
