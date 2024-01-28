@@ -5,6 +5,7 @@
   "hints": {
     "meta-viewport": "off",
     "axe/language": "off",
-    "meta-charset-utf-8": "off"
+    "meta-charset-utf-8": "off",
+    "axe/text-alternatives": "off"
   }
 }
