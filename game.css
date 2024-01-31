@@ -18,6 +18,12 @@ nav {
     text-decoration: none;
     font-family: 'Contrail One', sans-serif;
 }
+
+.suggest {
+  font-size: 15px;
+  color: #fff;
+  font-family: 'Contrail One', sans-serif;
+}
 .game img, .suggest img {
   width: 100%;
   border-radius: 20px;
