@@ -9,8 +9,6 @@ body {
 h1 {
     color: #fff;
     font-family: 'Contrail One', sans-serif;
-    overflow-y: hidden !important;
-    display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -18,6 +16,7 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
     margin-top: 50px;
+    justify-content: center;
 }
 
 h2 {
@@ -25,19 +24,6 @@ h2 {
     background-color: black;
     text-align: center;
     font-family: 'Contrail One', sans-serif;
-}
-
-p {
-  color: #fff;
-  font-family: 'Contrail One', sans-serif;
-  overflow-y: hidden !important;
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
 }
 
 nav {
