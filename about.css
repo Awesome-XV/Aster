@@ -10,7 +10,14 @@ h1 {
     font-family: 'Contrail One', sans-serif;
   }
 
-  nav a {
+
+.credit {
+    color: #fff;
+    text-align: center;
+    font-family: 'Contrail One', sans-serif;
+}
+
+nav a {
     margin: 20px;
     color: #fff;
     text-align: center;
@@ -23,9 +30,3 @@ h1 {
     background-color: #1a1a1a;
     box-shadow: #1a1a1a;
   }
-
-.credit {
-    color: #fff;
-    text-align: center;
-    font-family: 'Contrail One', sans-serif;
-}
