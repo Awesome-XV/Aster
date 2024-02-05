@@ -10,11 +10,16 @@ h1 {
     font-family: 'Contrail One', sans-serif;
 }
 
-nav {
+nav a {
+    margin: 20px;
     color: #fff;
     text-align: center;
-    margin-right: 20px;
-    margin-left: 20px;
     text-decoration: none;
     font-family: 'Contrail One', sans-serif;
-}
+  }
+
+  nav {
+    padding-bottom: 10px;
+    background-color: #1a1a1a;
+    box-shadow: #1a1a1a;
+  }
