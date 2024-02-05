@@ -17,6 +17,7 @@ h1 {
     font-weight: bold;
     margin-top: 50px;
     justify-content: center;
+    background-color: black;
 }
 
 h2 {
@@ -30,5 +31,7 @@ nav a {
     margin: 20px;
     color: #fff;
     text-align: center;
+    text-decoration: none;
     font-family: 'Contrail One', sans-serif;
+    background-color: black;
   }
