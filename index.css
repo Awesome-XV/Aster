@@ -33,5 +33,10 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-family: 'Contrail One', sans-serif;
-    background-color: black;
+  }
+
+  nav {
+    padding-bottom: 10px;
+    background-color: #1a1a1a;
+    box-shadow: #1a1a1a;
   }
