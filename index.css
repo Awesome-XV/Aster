@@ -36,6 +36,7 @@ nav a {
   }
 
   nav {
+    padding-top: 10px;
     padding-bottom: 10px;
     background-color: #1a1a1a;
     box-shadow: #1a1a1a;
