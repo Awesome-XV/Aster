@@ -1,0 +1,43 @@
+body {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    font-family: 'Contrail One', sans-serif;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Contrail One', sans-serif;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: black;
+}
+
+h2 {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    font-family: 'Contrail One', sans-serif;
+}
+
+nav a {
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Contrail One', sans-serif;
+  }
+
+  nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1a1a1a;
+    box-shadow: #1a1a1a;
+  }
