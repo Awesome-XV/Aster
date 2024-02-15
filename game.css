@@ -10,12 +10,29 @@ h1 {
     font-family: 'Contrail One', sans-serif;
     text-decoration: none;
   }
+ 
+  a {
+    color: #fff;
+    font-family: 'Contrail One', sans-serif;
+    text-decoration: none;
+    border: #fff;
+  }
 
+  a:hover {
+    color: #fff;
+    font-family: 'Contrail One', sans-serif;
+    text-decoration: none;
+    border: #fff;
+    background-color: #fff;
+  }
+
+  .game:hover
 .suggest {
   font-size: 15px;
   color: #fff;
   font-family: 'Contrail One', sans-serif;
 }
+
 .game img, .suggest img {
   width: 100%;
   border-radius: 20px;
@@ -42,6 +59,7 @@ h1 {
   font-family: 'Contrail One', sans-serif;
   color: var(--textcolor);
 }
+
 nav a {
   margin: 20px;
   margin-top: 20px;
