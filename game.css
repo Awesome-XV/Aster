@@ -10,23 +10,13 @@ h1 {
     font-family: 'Contrail One', sans-serif;
     text-decoration: none;
   }
- 
-  a {
+
+  .game {
     color: #fff;
     font-family: 'Contrail One', sans-serif;
     text-decoration: none;
-    border: #fff;
   }
 
-  a:hover {
-    color: #fff;
-    font-family: 'Contrail One', sans-serif;
-    text-decoration: none;
-    border: #fff;
-    background-color: #fff;
-  }
-
-  .game:hover
 .suggest {
   font-size: 15px;
   color: #fff;
