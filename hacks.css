@@ -22,9 +22,14 @@ h1 {
 
 h2 {
     color: #fff;
-    background-color: black;
-    text-align: center;
     font-family: 'Contrail One', sans-serif;
+    text-decoration: none;
+}
+
+p {
+    color: #fff;
+    font-family: 'Contrail One', sans-serif;
+    text-decoration: none;
 }
 
 nav a {
