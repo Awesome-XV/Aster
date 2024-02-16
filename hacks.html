@@ -29,11 +29,26 @@
             <a href="bug.html"><i>Problems</i></a>
         </nav>
         <h1>In progress</h1>
-        <a href="stuff">
-            <h2><i>Auto Clicker(Unavailable Currently)</i></h2>
-        </a>
-        <a href="javascript:console.log(document.body.contentEditable="
-        true"==document.body.contentEditable?%22false%22:%22true%22);" id="edit">
-            <h2><i>Edit</i></h2>
-            <p>Edit any webpage by dragging this to your bookmarks bar</p>
-        </a>
+        <div>
+            <a>Auto Clicker(Currently unavailable)</a>
+        </div>
+        <div class="hacks">
+            <a href='javascript:console.log(document.body.contentEditable="true"==document.body.contentEditable?"false":"true");' class="bookmarklet">Edit any webpage</a>
+            <p>This allows you to edit the text of any webpage. Just drag it to your bookmarkbar</p>
+        </div>
+        <div class="bookmarkletdiv">
+            <a href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())" class="bookmarklet">Source Code Viewer</a>
+            <p>This allows you to view and edit the source code of any website.</p>
+        </div>
+        <div class="bookmarkletdiv">
+            <a href="javascript:document.querySelectorAll('*').forEach(e=>e.setAttribute('style','background-color:#222;background-image:none;color:#'+(/^A|BU/.test(e.tagName)?'36c;text-decoration:underline;':'eee;')+e.getAttribute('style')))" class="bookmarklet">Dark Mode</a>
+            <p>This sets any page to dark mode.</p>
+        </div>
+        <div class="bookmarkletdiv">
+            <a href="javascript:var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://cdn.jsdelivr.net/gh/skysthelimitt/Selenite/js/asteroids.min.js';void(0);" class="bookmarklet">Asteroids</a>
+            <p>This allows you to play Asteroids on the website you are on.</p>
+        </div>
+        <div class="bookmarkletdiv">
+            <a href="javascript:var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://cdn.jsdelivr.net/gh/skysthelimitt/Selenite/js/katamari.js';void(0);" class="bookmarklet">Katamari</a>
+            <p>This allows you to collect the words on the page into a ball.</p>
+        </div>
