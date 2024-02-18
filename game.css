@@ -18,11 +18,16 @@ h1 {
     border: 2px solid #fff;
     border-radius: 10px;
     text-decoration-line: none;
+    grid-template-columns: 200px 1fr max-content;
   }
 
   .game:hover {
     background-color: #fff;
-    color: #1a1a1a;
+    color: #000;
+  }
+
+  .game a {
+    text-decoration: none;
   }
 
 .suggest {
