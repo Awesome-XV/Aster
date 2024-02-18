@@ -15,6 +15,14 @@ h1 {
     color: #fff;
     font-family: 'Contrail One', sans-serif;
     text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-decoration-line: none;
+  }
+
+  .game:hover {
+    background-color: #fff;
+    color: #1a1a1a;
   }
 
 .suggest {
