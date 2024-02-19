@@ -15,15 +15,17 @@ h1 {
     color: #fff;
     font-family: 'Contrail One', sans-serif;
     text-decoration: none;
-    border: 2px solid #fff;
+    border: 2px solid #262626;
     border-radius: 10px;
     text-decoration-line: none;
     grid-template-columns: 200px 1fr max-content;
   }
 
   .game:hover {
-    background-color: #fff;
-    color: #000;
+    color: #fff;
+    background-color: #262626;
+    font-family: 'Contrail One', sans-serif;
+    text-decoration: none;
   }
 
   .game a {

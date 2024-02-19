@@ -40,13 +40,24 @@ nav a {
     font-family: 'Contrail One', sans-serif;
   }
 
- 
+
   .hacks a {
     text-decoration: none;
     color: #fff;
     font-family: 'Contrail One', sans-serif;
     text-decoration: none;
-    border: 2px solid #fff;
+    border: 2px solid #262626;
+    border-radius: 10px;
+    display: inline-block;
+    width: 500px;
+  }
+
+  .hacks:hover {
+    color: #fff;
+    background-color: #262626;
+    font-family: 'Contrail One', sans-serif;
+    text-decoration: none;
+    border: 2px solid #262626;
     border-radius: 10px;
     text-decoration-line: none;
     display: inline-block;
