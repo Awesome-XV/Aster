@@ -29,9 +29,10 @@
         </nav>
         <h1>Some hacks for your use</h1>
         <br>
-        <div>
-            <a href='javascript:  var DELAY = 1; var autoClickerStyleElement = document.createElement("style"); autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}"; document.body.appendChild(autoClickerStyleElement); function addClicker(e) { if(!e.isTrusted) { return; } if(e.target.classList.contains("auto-clicker-target")) { e.target.classList.remove("auto-clicker-target"); } else { e.target.classList.add("auto-clicker-target"); } document.body.removeChild(autoClickerStyleElement); document.body.removeEventListener("click", addClicker); e.preventDefault();  autoClick(e.target);  } function autoClick(element) { if(element.classList.contains("auto-clicker-target")) { element.click(); setTimeout(function(){ autoClick(element); }, DELAY); } } document.body.addEventListener("click", addClicker, 0);'>Auto Clicker</a>
+        <div class="hacks">
+            <a href='javascript:  var DELAY = 1; var autoClickerStyleElement = document.createElement("style"); autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}"; document.body.appendChild(autoClickerStyleElement); function addClicker(e) { if(!e.isTrusted) { return; } if(e.target.classList.contains("auto-clicker-target")) { e.target.classList.remove("auto-clicker-target"); } else { e.target.classList.add("auto-clicker-target"); } document.body.removeChild(autoClickerStyleElement); document.body.removeEventListener("click", addClicker); e.preventDefault();  autoClick(e.target);  } function autoClick(element) { if(element.classList.contains("auto-clicker-target")) { element.click(); setTimeout(function(){ autoClick(element); }, DELAY); } } document.body.addEventListener("click", addClicker, 0);'>Auto Clicker
             <p>A quick and fast auto clicker that runs on most websites and browsers</p>
+            </a>
         </div>
         <div class="hacks">
             <a href='javascript:var num=prompt("History flood amount:");done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert(%22History%20flood%20successful!%20%22+window.location.href+%22%20now%20appears%20in%20your%20history%20%22+num+(num==1?%22%20time.%22:%22%20times.%20(ajaxdev)%22))}'>History Flooder
