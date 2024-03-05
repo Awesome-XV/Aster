@@ -1,1 +1,1 @@
-Aster is a beta website
+Aster is a gaming website website
