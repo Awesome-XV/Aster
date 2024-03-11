@@ -1,11 +1,11 @@
-$.getJSON("/games.json", function (data) {
+$.getJSON("/data/games.json", function (data) {
 	if (document.readyState === "complete") {
 		loadGames(data);
 	} else {
 		let areGamesReady = setInterval(() => {
 			if (document.readyState === "complete") {
 				loadGames(data);
-        clearInterval(areGamesReady);
+				clearInterval(areGamesReady);
 			}
 		}, 50);
 	}
@@ -13,10 +13,10 @@ $.getJSON("/games.json", function (data) {
 
 function loadGames(data) {
 	starredgames = getCookie("starred");
-	if (starredgames == "") {
+	if (!starredgames) {
 		starredgames = [];
 	} else {
-		starredgames = JSON.parse(starredgames);
+		starredgames = JSON.parse(decodeURIComponent(getCookie("starred")));
 	}
 	$("#gamesearch").prop({
 		placeholder: "Click here to search through our " + data.length + " games!",
@@ -24,16 +24,17 @@ function loadGames(data) {
 	data.sort(dynamicSort("name"));
 	gamelist = data;
 	for (let i = 0; i < data.length; i++) {
-		let $element = $("<div>")
+		let $element = $("<a>")
 			.attr({
 				class: "game",
 				id: data[i].directory,
 				recommended: data[i].recommended,
+				href: "/" + data[i].directory + "/index.html",
 			})
 			.data("recommended", data[i].recommended)
 			.append(
 				$("<img>").prop({
-					src: data[i].directory + "/" + data[i].image,
+					src: "/" + data[i].directory + "/" + data[i].image,
 					alt: data[i].name + " logo",
 				})
 			)
@@ -77,8 +78,13 @@ function loadGames(data) {
 
 	// starred games
 	let starred;
+	$(document).on("click", "img.star", function (event) {
+
+	});
 	$(document).on("click", ".game", function (event) {
 		if ($(event.target).is("img.star")) {
+			event.preventDefault();
+			event.stopPropagation();
 			if (!$(event.target).attr("id")) {
 				$(event.target).prop({ id: "starred" });
 				$(event.target).prop({ src: "img/star-fill.svg" });
@@ -140,11 +146,10 @@ function loadGames(data) {
 				$($thisdiv + " #starred").attr("src", "img/star.svg");
 				$($thisdiv + " #starred").removeAttr("id");
 			}
-		} else {
-			redirectGame($(this).attr("id"));
 		}
 	});
 	$(document).on("click", "#game img .star", function (event) {
+		event.stopPropagation();
 		$(this).prop({ class: "material-symbols-outlined fill" });
 	});
 }

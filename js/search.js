@@ -1,5 +1,5 @@
 function searchGames() {
-  search = 1;
+	search = 1;
 	var txt = $("#gamesearch").val();
 	if (txt == "") {
 		$("#games .suggest").show();
@@ -13,18 +13,16 @@ function searchGames() {
 		}
 	});
 }
-
-
 document.addEventListener("DOMContentLoaded", () => {
 	let urlParams = new URLSearchParams(window.location.search);
 	let q = urlParams.get("q");
 	if (q) {
 		document.getElementById("gamesearch").value = q;
 		searchGames();
-    urlParams.delete("q");
-    window.history.replaceState({}, document.title, location.pathname);
+		urlParams.delete("q");
+		window.history.replaceState({}, document.title, location.pathname);
 	}
-  $("#gamesearch").on("input propertychange paste", function () {
-		searchGames();
+	document.getElementById("gamesearch").addEventListener("input", () => {
+		searchGames();	
 	});
 });

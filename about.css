@@ -31,3 +31,12 @@ nav a {
     background-color: #1a1a1a;
     box-shadow: #1a1a1a;
   }
+
+  .dev {
+    color: #fff;
+    margin: 5px
+  }
+
+  p {
+    color: #fff;
+  }

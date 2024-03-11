@@ -4,7 +4,6 @@ function customTheme() {
 	document.getElementById("customMenu").style.display = "block";
 	loadTheme();
 }
-
 document.addEventListener("DOMContentLoaded", () => {
 	loadTheme();
     if(localStorage.getItem("selenite.theme") == "custom"){
