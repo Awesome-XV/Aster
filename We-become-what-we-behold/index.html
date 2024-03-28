@@ -1,40 +1,43 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="css/game.css" />
-    <title class="cloak">We Become What We Behold | MacVG</title>
-    <link class="favicon" rel="shortcut icon" href="/logo.png" />
-    <script src="/macvg/cloaker.js"></script>
-    <span id="macvgmacvg" name="game315"></span>
-  </head>
-  <body>
-    <div id="stage"></div>
-    <div id="modal_shade"></div>
-    <div class="overlay" id="warning">
-      <div>oh noes</div>
-      <div>
-        your browser doesn't support webgl.<br />
-        try a different browser or computer?
-      </div>
-    </div>
-    <div class="overlay" id="paused">
-      <div>paused</div>
-      <div>click anywhere to resume</div>
-    </div>
-  </body>
+	<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R1ZCLH6XCR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R1ZCLH6XCR');
+</script>
+<title>We Become What We Behold</title>
+		<link rel="stylesheet" href="css/game.css">
+	</head>
+	<body>
+		<div id="stage"></div>
+		<div id="modal_shade"></div>
+		<div class="overlay" id="warning">
+			<div>oh noes</div>
+			<div>
+			your browser doesn't support webgl.<br>
+			try a different browser or computer?
+			</div>
+		</div>
+		<div class="overlay" id="paused">
+			<div>paused</div>
+			<div>
+			click anywhere to resume
+			</div>
+		</div>
+	</body>
 </html>
 
 <!-- External Libraries -->
 <script src="js/lib/pixi.min.js"></script>
 <script src="js/lib/howler.js"></script>
 <script src="js/lib/stats.min.js"></script>
-<script>
-  var createjs = window;
-</script>
+<script>var createjs = window;</script>
 <script src="js/lib/tweenjs-0.6.2.min.js"></script>
-<script>
-  Ticker.framerate = 60;
-  Ticker.paused = true;
-</script>
+<script>Ticker.framerate=60; Ticker.paused=true;</script>
 <script src="js/lib/helpers.js"></script>
 
 <!-- Core Engine Code -->
@@ -91,21 +94,15 @@
 
 <!-- Game Scripts -->
 <script>
-  Game.stats = false;
-  window.onload = function () {
-    try {
-      Game.init();
-      //Game.init("Game");
-    } catch (e) {
-      document.getElementById("warning").style.display = "block";
-    }
-  };
-  window.SHARE_TEXT =
-    "I just played this really weird game about the news. WE BECOME WHAT WE BEHOLD:";
-  window.SHARE_URL = "https://ncase.itch.io/wbwwb";
+Game.stats = false;
+window.onload = function(){
+	try{
+		Game.init();
+		//Game.init("Game");
+	}catch(e){
+		document.getElementById("warning").style.display = "block";
+	}
+};
+window.SHARE_TEXT = "I just played this really weird game about the news. WE BECOME WHAT WE BEHOLD:"
+window.SHARE_URL = "https://ncase.itch.io/wbwwb";
 </script>
-<script
-  defer
-  src="https://static.itch.io/htmlgame.js"
-  type="text/javascript"
-></script>
