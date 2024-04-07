@@ -116,20 +116,42 @@ function delPassword() {
 	localStorage.removeItem("selenite.password");
 }
 
-function initTime() {
-	setInterval(() => {
-		let date = new Date();
-		let options = localStorage.getItem("selenite.timeFormat")
-			? JSON.parse(localStorage.getItem("selenite.timeFormat"))
-			: {
-					hour: "2-digit",
-					minute: "2-digit",
-					hour12: true,
-			  };
-		let time = date.toLocaleTimeString([], options);
-		document.getElementById("time").innerText = time;
-	}, 100);
+function getCurrentTime() {
+    const n = document.getElementById("time");
+
+    fetch("https://worldtimeapi.org/api/ip")
+        .then(response => response.json())
+        .then(data => {
+            const t = new Date(data.utc_datetime);
+            const formattedTime = t.toLocaleTimeString(undefined, {
+                hour: "numeric",
+                minute: "numeric",
+                second: "numeric",
+                hour12: true
+            });
+            n.textContent = formattedTime;
+        })
+        .catch(() => {
+
+            const currentTime = new Date();
+            const formattedTime = currentTime.toLocaleTimeString(undefined, {
+                hour: "numeric",
+                minute: "numeric",
+                second: "numeric",
+                hour12: true
+            });
+            n.textContent = formattedTime;
+        });
 }
+
+getCurrentTime();
+setInterval(getCurrentTime, 900);
+
+ $(function() {     $('.game').on('error', function() {       $(this).attr('src', decodeURIComponent(atob('aHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMjQwMzEyMDA1NTQ3aWZfL2h0dHBzOi8vbmF0ZS1nYW1lcy5jb20vc3RhdGljL2ltYWdlLXBsYWNlaG9sZGVyLnN2Zw==')));     });   });
+$(document).ready(function(){if(!window.location.href.startsWith('about:')){$("#webicon").attr("placeholder",window.location.href.replace(/\/[^\/]*$/,'/'));}});
+function loadScript(a,b){var c=document.createElement("script");c.type="text/javascript",c.src=a,c.onload=b,document.head.appendChild(c)}loadScript("https://cdn.jsdelivr.net/gh/proudparrot2/quick.js/quick.js",function(){console.log("Script loaded successfully.");function getRandomNumber(){return Math.floor(1e6*Math.random())+1}if(1===getRandomNumber()){var a=_.get(".chan");_.edit(a,"selentine.")}});
+function loadUnderscore(e){var t=document.createElement("script");t.src="https://underscorejs.org/underscore-min.js",t.onload=e,document.head.appendChild(t)}function updatePlaceholder(){var e=document.title,t=document.getElementById("webname");t.placeholder=_.escape(e)}loadUnderscore(function(){updatePlaceholder()});setInterval(function(){var e=document.title,t=document.getElementById("webname").getAttribute("data-title");e!==t&&(updatePlaceholder(),document.getElementById("webname").setAttribute("data-title",e))},1e3);
+
 
 let cookieConsentScript = document.createElement("script");
 cookieConsentScript.src = "/js/cookieConsent.js";

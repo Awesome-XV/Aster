@@ -25,9 +25,22 @@ nav a {
     font-family: 'Contrail One', sans-serif;
   }
 
-  nav {
+nav {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #1a1a1a;
     box-shadow: #1a1a1a;
   }
+
+.time {
+  margin: 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Contrail One', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1a1a1a;
+  box-shadow: #1a1a1a;
+  
+}

@@ -25,11 +25,11 @@ function clearCloak() {
 	document.cookie = "tabname=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 	var link = document.querySelector("link[rel~='icon']");
 	link.remove();
-	document.title = "Aster Settings";
+	document.title = "Settings | Selenite";
 	link = document.createElement("link");
 	link.rel = "icon";
 	document.head.appendChild(link);
-	link.href = "/Aster logo.ico";
+	link.href = "/favicon.png";
 }
 async function loadCloaks() {
   const response = await fetch("/data/cloaks.json");
