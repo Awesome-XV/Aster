@@ -2,9 +2,9 @@ function searchGames() {
 	search = 1;
 	var txt = $("#gamesearch").val();
 	if (txt == "") {
-		$("#games .suggest").show();
+		$("#game").show();
 	} else {
-		$("#games .suggest").hide();
+		$("#game").hide();
 	}
 	$("#games .game").hide();
 	$("#games .game").each(function () {
