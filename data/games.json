@@ -240,6 +240,11 @@
 		"image": "logo.jpg"
 	},
 	{
+		"name": "Sprinter",
+		"directory": "sprinter",
+		"image": "icon.jpeg"
+	},
+	{
 		"name": "Worlds Hardest Game 2",
 		"directory": "worldhardestgame2",
 		"image": "the-worlds-hardest-game-2.jpg"
