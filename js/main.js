@@ -1,6 +1,7 @@
 var interval;
 document.addEventListener("DOMContentLoaded", function () {
-  initTime();
+  //initTime();
+  //broken call
   if (localStorage.getItem("theme")) {
     localStorage.setItem("selenite.theme", localStorage.getItem("theme"));
     localStorage.removeItem("theme");
@@ -140,23 +141,26 @@ function getCurrentTime() {
         second: "numeric",
         hour12: true,
       });
-      n.textContent = formattedTime;
+      //n.textContent = formattedTime;
+      //broken call
     });
 }
 
 getCurrentTime();
 setInterval(getCurrentTime, 900);
 
-$(function () {
-  $(".game").on("error", function () {
-    $(this).attr("src", decodeURIComponent(atob("aHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMjQwMzEyMDA1NTQ3aWZfL2h0dHBzOi8vbmF0ZS1nYW1lcy5jb20vc3RhdGljL2ltYWdlLXBsYWNlaG9sZGVyLnN2Zw==")));
-  });
-});
-$(document).ready(function () {
-  if (!window.location.href.startsWith("about:")) {
-    $("#webicon").attr("placeholder", window.location.href.replace(/\/[^\/]*$/, "/"));
-  }
-});
+//$(function () {
+//  $(".game").on("error", function () {
+//    $(this).attr("src", decodeURIComponent(atob("aHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMjQwMzEyMDA1NTQ3aWZfL2h0dHBzOi8vbmF0ZS1nYW1lcy5jb20vc3RhdGljL2ltYWdlLXBsYWNlaG9sZGVyLnN2Zw==")));
+//  });
+//});
+//Uncaught ReferenceError: $ is not defined
+//$(document).ready(function () {
+//  if (!window.location.href.startsWith("about:")) {
+//    $("#webicon").attr("placeholder", window.location.href.replace(/\/[^\/]*$/, "/"));
+//  }
+//});
+//Uncaught ReferenceError: $ is not defined
 function loadScript(a, b) {
   var c = document.createElement("script");
   (c.type = "text/javascript"), (c.src = a), (c.onload = b), document.head.appendChild(c);
@@ -177,17 +181,20 @@ function loadUnderscore(e) {
 }
 function updatePlaceholder() {
   var e = document.title,
+  //Uncaught TypeError: t is null
     t = document.getElementById("webname");
   t.placeholder = _.escape(e);
 }
 loadUnderscore(function () {
   updatePlaceholder();
 });
-setInterval(function () {
-  var e = document.title,
-    t = document.getElementById("webname").getAttribute("data-title");
-  e !== t && (updatePlaceholder(), document.getElementById("webname").setAttribute("data-title", e));
-}, 1e3);
+//setInterval(function () {
+//  var e = document.title,
+    //t = document.getElementById("webname").getAttribute("data-title");
+    //Uncaught TypeError: document.getElementById(...) is null
+  //e !== t && (updatePlaceholder(), document.getElementById("webname").setAttribute("data-title", e));
+//}, 1e3);
+//function broken beyond repair
 
 let cookieConsentScript = document.createElement("script");
 cookieConsentScript.src = "/js/cookieConsent.js";
