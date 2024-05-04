@@ -1,50 +1,52 @@
 body {
-    color: #fff;
-    background-color: black;
-    text-align: center;
-    font-family: 'Contrail One', sans-serif;
+  color: #fff;
+  background-color: black;
+  text-align: center;
+  font-family: "Contrail One", sans-serif;
 }
 
 h1 {
-    color: #fff;
-    font-family: 'Contrail One', sans-serif;
-    text-decoration: none;
-  }
+  color: #fff;
+  font-family: "Contrail One", sans-serif;
+  text-decoration: none;
+}
 
-  .game {
-    color: #fff;
-    font-family: 'Contrail One', sans-serif;
-    text-decoration: none;
-    border: 2px solid #262626;
-    border-radius: 10px;
-    text-decoration-line: none;
-    grid-template-columns: 200px 1fr max-content;
-  }
+.game {
+  color: #fff;
+  font-family: "Contrail One", sans-serif;
+  text-decoration: none;
+  border: 2px solid #262626;
+  border-radius: 10px;
+  text-decoration-line: none;
+  grid-template-columns: 200px 1fr max-content;
+}
 
-  .game:hover {
-    color: #fff;
-    background-color: #262626;
-    font-family: 'Contrail One', sans-serif;
-    text-decoration: none;
-  }
+.game:hover {
+  color: #fff;
+  background-color: #262626;
+  font-family: "Contrail One", sans-serif;
+  text-decoration: none;
+}
 
-  .game a {
-    text-decoration: none;
-  }
+.game a {
+  text-decoration: none;
+}
 
 .suggest {
   font-size: 15px;
   color: #fff;
-  font-family: 'Contrail One', sans-serif;
+  font-family: "Contrail One", sans-serif;
 }
 
-.game img, .suggest img {
+.game img,
+.suggest img {
   width: 100%;
   border-radius: 20px;
   aspect-ratio: 1 / 1;
 }
 
-.game, .suggest {
+.game,
+.suggest {
   width: 15%;
   border-radius: 20px;
   display: inline-block;
@@ -55,11 +57,11 @@ h1 {
 }
 
 button {
-    background-color: black;
-    border: 2px solid #262626;
-    color: #fff;
-    text-align: center;
-    font-family: 'Contrail One', sans-serif;
+  background-color: black;
+  border: 2px solid #262626;
+  color: #fff;
+  text-align: center;
+  font-family: "Contrail One", sans-serif;
 }
 
 button:hover {
@@ -67,7 +69,7 @@ button:hover {
   border: 2px solid #262626;
   color: #fff;
   text-align: center;
-  font-family: 'Contrail One', sans-serif;
+  font-family: "Contrail One", sans-serif;
   cursor: pointer;
 }
 
@@ -78,7 +80,7 @@ button:hover {
   box-sizing: border-box;
   align-content: center;
   text-align: center;
-  font-family: 'Contrail One', sans-serif;
+  font-family: "Contrail One", sans-serif;
   color: var(--textcolor);
 }
 
@@ -88,7 +90,7 @@ nav a {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  font-family: 'Contrail One', sans-serif;
+  font-family: "Contrail One", sans-serif;
 }
 
 nav {

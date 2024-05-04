@@ -48,7 +48,7 @@ function downloadMainSave() {
 
 // Function to get the main save data from an uploaded file
 function getMainSaveFromUpload(data, key) {
-  if(key) {
+  if (key) {
     data = CryptoJS.AES.decrypt(data, key).toString(CryptoJS.enc.Utf8);
   } else {
     data = CryptoJS.AES.decrypt(data, "egamepass").toString(CryptoJS.enc.Utf8);
@@ -84,15 +84,15 @@ function uploadMainSave(key) {
     var reader = new FileReader();
 
     reader.onload = function (e) {
-      if(key) {
+      if (key) {
         getMainSaveFromUpload(e.target.result, key);
       } else {
         getMainSaveFromUpload(e.target.result);
       }
-      $("#upload").text("Upload Successful!")
-      setTimeout(function() {
-        $("#upload").text("Upload Save")
-      }, 3000)
+      $("#upload").text("Upload Successful!");
+      setTimeout(function () {
+        $("#upload").text("Upload Save");
+      }, 3000);
     };
 
     reader.readAsText(file);
