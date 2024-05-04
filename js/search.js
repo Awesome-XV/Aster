@@ -1,28 +1,15 @@
-function searchGames() {
-  search = 1;
-  var txt = $("#gamesearch").val();
-  if (txt == "") {
-    $("#game .game").show();
-  } else {
-    $("#game .game").hide();
-  }
-  $("#games .game").hide();
-  $("#games .game").each(function () {
-    if ($(this).text().toUpperCase().indexOf(txt.toUpperCase()) != -1 || $(this).attr("id").toUpperCase().indexOf(txt.toUpperCase()) != -1) {
-      $(this).show();
+function search() {
+  var input, filter, games, h1, i, txtValue;
+  input = document.getElementById("searchBar");
+  filter = input.value.toUpperCase();
+  games = document.getElementsByClassName("game");
+  for (i = 0; i < games.length; i++) {
+    h1 = games[i].getElementsByTagName("h1")[0];
+    txtValue = h1.textContent || h1.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      games[i].style.display = "";
+    } else {
+      games[i].style.display = "none";
     }
-  });
-}
-document.addEventListener("DOMContentLoaded", () => {
-  let urlParams = new URLSearchParams(window.location.search);
-  let q = urlParams.get("q");
-  if (q) {
-    document.getElementById("gamesearch").value = q;
-    searchGames();
-    urlParams.delete("q");
-    window.history.replaceState({}, document.title, location.pathname);
   }
-  document.getElementById("gamesearch").addEventListener("input", () => {
-    searchGames();
-  });
-});
+}
