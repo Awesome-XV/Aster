@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="sl-theme-dark" lang="en">
-  <meta charset="utf-8"> <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
   <head>
     <!-- initialize theme vars
     https://coolors.co/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff -->
@@ -10,18 +11,14 @@
     <!-- initialize externals -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
-    
-
-
 
     <!-- initialize my stuff -->
     <script src="/js/all.js"></script>
     <script src="/js/main.js"></script>
-<script src="/js/themes.js"></script>
+    <script src="/js/themes.js"></script>
     <script src="/js/cloaks.js"></script>
     <script src="/js/themes.js"></script>
-  <link rel="stylesheet" href="/settings.css" />
-
+    <link rel="stylesheet" href="/settings.css" />
 
     <!-- seo + other things -->
     <title>Settings</title>
@@ -34,14 +31,14 @@
   </head>
 
   <body>
- 	<nav>
-			<a href="/index.html">Home</a>
-			<a href="/hacks.html">Hacks</a>
-			<a href="/games.html">Games</a>
-			<a href="/settings.html">Settings</a>
-			<a id="blank" href="#">Open Blank</a>
-				<p id="time" class="time">00:00 AM</p>
-  </nav>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/hacks.html">Hacks</a>
+      <a href="/games.html">Games</a>
+      <a href="/settings.html">Settings</a>
+      <a id="blank" href="#">Open Blank</a>
+      <p id="time" class="time">00:00 AM</p>
+    </nav>
 
     <main>
       <h1>Settings</h1>
@@ -64,28 +61,23 @@
           <option value="khan">Khan Academy</option>
           <option value="quizlet">Quizlet</option>
           <option value="schoology">Schoology</option>
-        </select><br />
+        </select>
+        <br />
         <input id="websubmit" class="submit" type="submit" value="Set Tab Cloak" />
       </form>
       <button onclick="javascript:clearCloak();">Clear your current tab cloak</button>
       <br />
       <div class="samerow">
-      <input type="checkbox" id="discordIcon" name="discordIcon">
-      <label for="discordIcon">Disable Discord Icon</label><br>
+        <input type="checkbox" id="discordIcon" name="discordIcon" />
+        <label for="discordIcon">Disable Discord Icon</label><br />
       </div>
       <div class="samerow">
-        <input type="checkbox" id="blockClose" name="blockClose">
-        <label for="blockClose">Block tab from being closed</label><br>
+        <input type="checkbox" id="blockClose" name="blockClose" />
+        <label for="blockClose">Block tab from being closed</label><br />
       </div>
       <div class="samerow">
-        <input type="checkbox" id="tabDisguise" name="tabDisguise">
-        <label for="tabDisguise">Disguise your tab when you click off (currently only Google)</label><br>
-      </div>
-        <!--     --inputbg: #000000;
-    --inputborder: #000000;
-    --uibg: #000000;
-    --textcolor: #000;
-    --bg: #000000; -->
+        <input type="checkbox" id="tabDisguise" name="tabDisguise" />
+        <label for="tabDisguise">Disguise your tab when you click off (currently only Google)</label><br />
       </div>
       <br />
       <form action="javascript:setPanicMode();">

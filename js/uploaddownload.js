@@ -18,8 +18,7 @@ function getMainSaveFromUpload(data) {
 
 // Function to handle the file upload
 function uploadMainSave() {
-  document.body.innerHTML +=
-    '<input class="hiddenUpload" type="file" accept=".save"/>';
+  document.body.innerHTML += '<input class="hiddenUpload" type="file" accept=".save"/>';
   var hiddenUpload = document.querySelector(".hiddenUpload");
 
   // Listen for the change event on the file input element
@@ -40,9 +39,7 @@ function uploadMainSave() {
     reader.readAsText(file);
   });
 }
-(s.src =
-  "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"),
-  document.head.appendChild(s);
+(s.src = "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"), document.head.appendChild(s);
 s.onload = function () {
   uploadMainSave();
 };
