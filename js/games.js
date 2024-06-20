@@ -1,6 +1,5 @@
-let gamelist; // Declare gamelist globally
+let gamelist;
 
-// Use fetch to get the games.json data
 fetch("/data/games.json")
   .then(response => {
     if (!response.ok) {
