@@ -1,15 +1,25 @@
-$.getJSON("/data/games.json", function (data) {
-  if (document.readyState === "complete") {
-    loadGames(data);
-  } else {
-    let areGamesReady = setInterval(() => {
-      if (document.readyState === "complete") {
-        loadGames(data);
-        clearInterval(areGamesReady);
-      }
-    }, 50);
-  }
-});
+let gamelist;
+
+fetch("/data/games.json")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    if (document.readyState === "complete") {
+      loadGames(data);
+    } else {
+      let areGamesReady = setInterval(() => {
+        if (document.readyState === "complete") {
+          loadGames(data);
+          clearInterval(areGamesReady);
+        }
+      }, 50);
+    }
+  })
+  .catch(error => console.error('There has been a problem with your fetch operation:', error));
 
 function loadGames(data) {
   starredgames = getCookie("starred");
