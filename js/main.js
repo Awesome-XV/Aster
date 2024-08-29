@@ -120,30 +120,14 @@ function delPassword() {
 
 function getCurrentTime() {
   const n = document.getElementById("time");
-
-  fetch("https://worldtimeapi.org/api/ip")
-    .then((response) => response.json())
-    .then((data) => {
-      const t = new Date(data.utc_datetime);
-      const formattedTime = t.toLocaleTimeString(undefined, {
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-        hour12: true,
-      });
-      n.textContent = formattedTime;
-    })
-    .catch(() => {
-      const currentTime = new Date();
-      const formattedTime = currentTime.toLocaleTimeString(undefined, {
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-        hour12: true,
-      });
-      //n.textContent = formattedTime;
-      //broken call
-    });
+  const currentTime = new Date();
+  const formattedTime = currentTime.toLocaleTimeString(undefined, {
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+    hour12: true,
+  });
+  n.textContent = formattedTime;
 }
 
 getCurrentTime();

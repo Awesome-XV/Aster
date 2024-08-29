@@ -1,205 +1,40 @@
-let gamelist;
-
-fetch("/data/games.json")
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    if (document.readyState === "complete") {
-      loadGames(data);
-    } else {
-      let areGamesReady = setInterval(() => {
-        if (document.readyState === "complete") {
-          loadGames(data);
-          clearInterval(areGamesReady);
-        }
-      }, 50);
-    }
-  })
-  .catch(error => console.error('There has been a problem with your fetch operation:', error));
-
-function loadGames(data) {
-  starredgames = getCookie("starred");
-  if (!starredgames) {
-    starredgames = [];
-  } else {
-    starredgames = JSON.parse(decodeURIComponent(getCookie("starred")));
-  }
-  $("#gamesearch").prop({
-    placeholder: "Click here to search through our " + data.length + " games!",
-  });
-  data.sort(dynamicSort("name"));
-  gamelist = data;
-  for (let i = 0; i < data.length; i++) {
-    let $element = $("<a>")
-      .attr({
-        class: "game",
-        id: data[i].directory,
-        recommended: data[i].recommended,
-        href: "/" + data[i].directory + "/index.html",
-      })
-      .data("recommended", data[i].recommended)
-      .append(
-        $("<img>").prop({
-          src: "/" + data[i].directory + "/" + data[i].image,
-          alt: data[i].name + " logo",
-        })
-      )
-      .append($("<h1>").text(data[i].name))
-      .append(
-        $("<img>").prop({
-          src: "img/star.svg",
-          alt: "star",
-          class: "star",
-        })
-      );
-
-    if (starredgames.includes(data[i].directory)) {
-      $element.find("img.star").attr("id", "starred");
-      $element.find("img.star").attr("src", "img/star-fill.svg");
-      let $pinnedelement = $element.clone();
-      $("#pinned").append($pinnedelement);
-      if ($("#pinnedmessage")) {
-        $("#pinnedmessage").hide();
+window.onload = function() {
+  // game loading thing
+  fetch('data/games.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("error " + response.status);
       }
-    }
+      return response.json();
+    })
+    .then(data => {
+      for (let game of data.games) {
+        // create game cards
+        let gameDiv = document.createElement('div');
+        gameDiv.className = "game";
+        gameDiv.id = game.id;
 
-    $("#games").append($element);
-  }
-  $("#games #message").remove();
+        let gameLink = document.createElement('a');
+        gameLink.href = `${game.id}/index.html`;
 
-  if ((search = 1)) {
-    var txt = $("#gamesearch").val();
-    if (txt == "") {
-      $("#games .suggest").show();
-    } else {
-      $("#games .suggest").hide();
-    }
-    $("#games .game").hide();
-    $("#games .game").each(function () {
-      if ($(this).text().toUpperCase().indexOf(txt.toUpperCase()) != -1 || $(this).attr("id").toUpperCase().indexOf(txt.toUpperCase()) != -1) {
-        $(this).show();
+        let gameImg = document.createElement('img');
+        gameImg.src = `${game.id}/${game.imgSrc}`;
+        gameImg.alt = game.id;
+
+        let gameTitle = document.createElement('h1');
+        gameTitle.textContent = game.title;
+
+        // combine them
+        gameLink.appendChild(gameImg);
+        gameLink.appendChild(gameTitle);
+        gameDiv.appendChild(gameLink);
+
+        // add to page
+        document.body.appendChild(gameDiv);
       }
+    })
+    .catch(e => {
+      console.log('error: ' + e.message);
     });
-  }
-
-  // starred games
-  let starred;
-  $(document).on("click", "img.star", function (event) {});
-  $(document).on("click", ".game", function (event) {
-    if ($(event.target).is("img.star")) {
-      event.preventDefault();
-      event.stopPropagation();
-      if (!$(event.target).attr("id")) {
-        $(event.target).prop({ id: "starred" });
-        $(event.target).prop({ src: "img/star-fill.svg" });
-        starred = Cookies.get("starred");
-        if (starred) {
-          starred = JSON.parse(starred);
-        } else {
-          starred = [];
-        }
-        starred.push($(this).attr("id"));
-        Cookies.set("starred", JSON.stringify(starred));
-        $element = $(this).clone();
-        $("#pinned").append($element);
-        $("#pinnedmessage").hide();
-        temp = $("#pinned")[0].childNodes;
-        pinnedarray = [...temp];
-        pinnedarray.sort(dynamicSort("id"));
-        $("#pinned").empty();
-        for (let i = 0; i < pinnedarray.length; i++) {
-          pinnedarraynodes = pinnedarray[i].childNodes;
-          pinnedarraynodes = [...pinnedarraynodes];
-          let $element = $("<div>")
-            .prop({
-              class: "game",
-              id: pinnedarray[i].id,
-            })
-            .append(
-              $("<img>").prop({
-                src: pinnedarraynodes[0].src,
-                alt: pinnedarraynodes[0].alt,
-                class: "gameicon",
-              })
-            )
-            .append($("<h1>").text(pinnedarraynodes[1].innerHTML))
-            .append(
-              $("<img>").prop({
-                src: "img/star-fill.svg",
-                alt: "star",
-                class: "star",
-                id: "starred",
-              })
-            );
-          $("#pinned").append($element);
-        }
-      } else {
-        $(event.target).removeAttr("id");
-        $(event.target).attr("src", "img/star.svg");
-        $thisdiv = "#" + $(this).attr("id");
-        $thisdiv = $thisdiv.replace(".", "\\.");
-        starred = Cookies.get("starred");
-        starred = JSON.parse(starred);
-        ourindex = starred.indexOf($(this).attr("id"));
-        starred.splice(ourindex, 1);
-        Cookies.set("starred", JSON.stringify(starred));
-        $("#pinned " + $thisdiv).remove();
-        if ($("#pinned").is(":empty")) {
-          $("#pinnedmessage").show();
-        }
-        $($thisdiv + " #starred").attr("src", "img/star.svg");
-        $($thisdiv + " #starred").removeAttr("id");
-      }
-    }
-  });
-  $(document).on("click", "#game img .star", function (event) {
-    event.stopPropagation();
-    $(this).prop({ class: "material-symbols-outlined fill" });
-  });
-}
-
-function redirectGame(dir) {
-  window.location.href = window.location.origin + "/" + dir + "/index.html";
-}
-function dynamicSort(property) {
-  var sortOrder = 1;
-
-  if (property[0] === "-") {
-    sortOrder = -1;
-    property = property.substr(1);
-  }
-  return function (a, b) {
-    if (sortOrder == -1) {
-      return b[property].localeCompare(a[property]);
-    } else {
-      return a[property].localeCompare(b[property]);
-    }
-  };
-}
-
-function selectRandomGame() {
-  redirectGame(gamelist[Math.floor(Math.random() * gamelist.length - 1)].directory);
-}
-
-let viewrecommended = 0;
-function recommendedGames() {
-  if (viewrecommended == 0) {
-    $("#games .game").hide();
-    $("#games .game").each(function () {
-      if ($(this).attr("recommended")) {
-        $(this).show();
-      }
-    });
-    $("#recommend").text("Click to view all games again!");
-    viewrecommended = 1;
-  } else {
-    $("#games .game").hide();
-    $("#games .game").show();
-    viewrecommended = 0;
-    $("#recommend").text("Click to view recommended games!");
-  }
+  console.log("games.js loaded");
 }
