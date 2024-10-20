@@ -41,3 +41,19 @@ nav {
   background-color: #1a1a1a;
   box-shadow: #1a1a1a;
 }
+
+footer a {
+  margin: 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Contrail One", sans-serif;
+}
+
+footer {
+  margin-top: 420px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1a1a1a;
+  box-shadow: #1a1a1a;
+}
