@@ -45,6 +45,44 @@ h1 {
   aspect-ratio: 1 / 1;
 }
 
+
+.game h1 {
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  overflow: hidden; /* Hides overflowed content */
+  text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate overflowed content */
+}
+
+select#gamesPerPage {
+  background-color: black;
+  color: white; /* Text color */
+  border: 1px solid white;
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* Remove default styling for Webkit browsers */
+  -moz-appearance: none; /* Remove default styling for Firefox */
+  padding: 10px;
+  font-size: 16px;
+}
+
+select#gamesPerPage:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+select#gamesPerPage::-ms-expand {
+  display: none; /* Remove default arrow for Internet Explorer */
+}
+
+select#gamesPerPage::after {
+  content: '▼'; /* Unicode character for the arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: white; /* Arrow color */
+}
+
+
+
 .game,
 .suggest {
   width: 15%;

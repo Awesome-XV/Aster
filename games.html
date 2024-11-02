@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="Aster logo.ico" />
-    <script src="js/all.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/cloaks.js"></script>
-    <script src="js/search.js"></script>
     <script src="js/games.js"></script>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/cloaks.js"></script>
+    <script src="js/search.js"></script>
+    <script defer src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <link href="game.css" rel="stylesheet" />
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D60Y5MK0EM"></script>
-  <script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D60Y5MK0EM"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
-      dataLayer.push(arguments);
+        dataLayer.push(arguments);
     }
     gtag("js", new Date());
-
     gtag("config", "G-D60Y5MK0EM");
-  </script>
-  <title>Aster Games</title>
-  <body>
+</script>
+<title>Aster Games</title>
+<body>
     <nav>
-      <a href="index.html"><i>Home</i></a>
-      <a href="games.html"><i>Games</i></a>
-      <a href="hacks.html"><i>Hacks</i></a>
-      <a href="settings.html"><i>Settings</i></a>
-      <a id="blank" href="#"><i>Open Blank</i></a>
-      <a href="about.html"><i>About</i></a>
+        <a href="index.html"><i>Home</i></a>
+        <a href="games.html"><i>Games</i></a>
+        <a href="hacks.html"><i>Hacks</i></a>
+        <a href="settings.html"><i>Settings</i></a>
+        <a id="blank" href="#"><i>Open Blank</i></a>
+        <a href="about.html"><i>About</i></a>
     </nav>
     <h1>The games page</h1>
     <input type="text" id="searchBar" onkeyup="search()" placeholder="Search for games.." />
     <div>
-      <button id="random" onclick="selectRandomGame()">Play a random game!</button>
+        <button id="random" onclick="selectRandomGame()">Play a random game!</button>
     </div>
+    <div>
+        <label for="gamesPerPage">Games per page: NB: The more you select the more time it takes to load you can change this by the way if you didn't know</label>
+        <select id="gamesPerPage">
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+        </select>
+    </div>
+    <div id="games-container"></div>
+    <div id="pagination-controls"></div>
     <div id="game">
-      <div class="game" id="suggest">
-        <a href="suggest.html">
-          <img src="random images/google form.jpg" alt="suggest" />
-          <h1>Suggest a game</h1>
-        </a>
-      </div>
+        <div class="game" id="suggest">
+            <a href="suggest.html">
+                <img src="random images/google form.jpg" alt="suggest" />
+                <h1>Suggest a game</h1>
+            </a>
+        </div>
     </div>
-  </body>
+</body>
 </html>
