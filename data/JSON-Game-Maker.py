@@ -15,7 +15,7 @@ for folder_name in os.listdir(root_dir):
         # Find the first image file (png, icon, jpg) in the folder
         img_file = None
         for file_name in os.listdir(folder_path):
-            if file_name.lower().endswith(('.png', '.jpg', '.jpeg', '.ico')):
+            if file_name.lower().endswith(('.png', '.jpg', '.jpeg', '.ico', '.svg')):
                 img_file = file_name
                 break
         
