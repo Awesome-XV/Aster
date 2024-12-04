@@ -9,7 +9,7 @@ def find_file_with_extension(directory, extensions):
     for root, _, files in os.walk(directory):
         for file in files:
             if file.lower().endswith(extensions):
-                return os.path.relpath(os.path.join(root, file), directory)
+                return os.path.relpath(os.path.join(root, file), directory).replace('\\', '/')
     return None
 
 # Function to generate JSON entries for games

@@ -103,7 +103,7 @@
     },
     {
         "id": "adventure-capitalist",
-        "imgSrc": "old\\favicon.ico",
+        "imgSrc": "old/favicon.ico",
         "title": "Adventure Capitalist",
         "htmlFile": "index.html"
     },
@@ -157,13 +157,13 @@
     },
     {
         "id": "angelunder",
-        "imgSrc": "TemplateData\\babusgames-logo.png",
+        "imgSrc": "TemplateData/babusgames-logo.png",
         "title": "Angelunder",
         "htmlFile": "index.html"
     },
     {
         "id": "angry-sharks",
-        "imgSrc": "assets\\favicon\\icon-36x36.png",
+        "imgSrc": "assets/favicon/icon-36x36.png",
         "title": "Angry Sharks",
         "htmlFile": "index.html"
     },
@@ -193,7 +193,7 @@
     },
     {
         "id": "backrooms",
-        "imgSrc": "Build\\WebGL.jpg",
+        "imgSrc": "Build/WebGL.jpg",
         "title": "Backrooms",
         "htmlFile": "index.html"
     },
@@ -301,7 +301,7 @@
     },
     {
         "id": "Blockblast",
-        "imgSrc": "TemplateData\\favicon.ico",
+        "imgSrc": "TemplateData/favicon.ico",
         "title": "Blockblast",
         "htmlFile": "index.html"
     },
@@ -319,7 +319,7 @@
     },
     {
         "id": "bntts",
-        "imgSrc": "icons\\icon-128.png",
+        "imgSrc": "icons/icon-128.png",
         "title": "Bntts",
         "htmlFile": "index.html"
     },
@@ -391,7 +391,7 @@
     },
     {
         "id": "burritobison",
-        "imgSrc": "Build\\logo.png",
+        "imgSrc": "Build/logo.png",
         "title": "Burritobison",
         "htmlFile": "index.html"
     },
@@ -403,7 +403,7 @@
     },
     {
         "id": "cannon-basketball-4",
-        "imgSrc": "assets\\images\\atlasGame.png",
+        "imgSrc": "assets/images/atlasGame.png",
         "title": "Cannon Basketball 4",
         "htmlFile": "index.html"
     },
@@ -421,7 +421,7 @@
     },
     {
         "id": "cell-machine",
-        "imgSrc": "img\\icon.png",
+        "imgSrc": "img/icon.png",
         "title": "Cell Machine",
         "htmlFile": "index.html"
     },
@@ -457,7 +457,7 @@
     },
     {
         "id": "circlo",
-        "imgSrc": "html5game_a5\\circloO_texture_0.png",
+        "imgSrc": "html5game_a5/circloO_texture_0.png",
         "title": "Circlo",
         "htmlFile": "index.html"
     },
@@ -481,7 +481,7 @@
     },
     {
         "id": "cookieclicker",
-        "imgSrc": "img\\alchemylab.png",
+        "imgSrc": "img/alchemylab.png",
         "title": "Cookieclicker",
         "htmlFile": "index.html"
     },
@@ -493,7 +493,7 @@
     },
     {
         "id": "craftmine",
-        "imgSrc": "images\\animal-sheet0.png",
+        "imgSrc": "images/animal-sheet0.png",
         "title": "Craftmine",
         "htmlFile": "index.html"
     },
@@ -511,7 +511,7 @@
     },
     {
         "id": "csgoclicker",
-        "imgSrc": "images\\case1.png",
+        "imgSrc": "images/case1.png",
         "title": "Csgoclicker",
         "htmlFile": "index.html"
     },
@@ -535,7 +535,7 @@
     },
     {
         "id": "cubefield",
-        "imgSrc": "assets\\textures.png",
+        "imgSrc": "assets/textures.png",
         "title": "Cubefield",
         "htmlFile": "index.html"
     },
@@ -571,7 +571,7 @@
     },
     {
         "id": "death-run-3d",
-        "imgSrc": "img\\death.png",
+        "imgSrc": "img/death.png",
         "title": "Death Run 3D",
         "htmlFile": "index.html"
     },
@@ -655,7 +655,7 @@
     },
     {
         "id": "drift-boss",
-        "imgSrc": "media\\graphics\\generic-ad\\light\\close-button.png",
+        "imgSrc": "media/graphics/generic-ad/light/close-button.png",
         "title": "Drift Boss",
         "htmlFile": "index.html"
     },
@@ -667,7 +667,7 @@
     },
     {
         "id": "drivemad",
-        "imgSrc": "icons\\icon-128.png",
+        "imgSrc": "icons/icon-128.png",
         "title": "Drivemad",
         "htmlFile": "index.html"
     },
@@ -721,7 +721,7 @@
     },
     {
         "id": "eaglerfaithful",
-        "imgSrc": "img\\old.png",
+        "imgSrc": "img/old.png",
         "title": "Eaglerfaithful",
         "htmlFile": "index.html"
     },
@@ -793,13 +793,13 @@
     },
     {
         "id": "exo",
-        "imgSrc": "img\\small.jpg",
+        "imgSrc": "img/small.jpg",
         "title": "Exo",
         "htmlFile": "index.html"
     },
     {
         "id": "factoryballs",
-        "imgSrc": "images\\factoryballsforever_atlas_.png",
+        "imgSrc": "images/factoryballsforever_atlas_.png",
         "title": "Factoryballs",
         "htmlFile": "index.html"
     },
@@ -871,7 +871,7 @@
     },
     {
         "id": "flappy-bird",
-        "imgSrc": "assets\\bird.png",
+        "imgSrc": "assets/bird.png",
         "title": "Flappy Bird",
         "htmlFile": "index.html"
     },
@@ -949,13 +949,13 @@
     },
     {
         "id": "game-inside",
-        "imgSrc": "img\\display.png",
+        "imgSrc": "img/display.png",
         "title": "Game Inside",
         "htmlFile": "index.html"
     },
     {
         "id": "gearsofbabies",
-        "imgSrc": "TemplateData\\favicon.ico",
+        "imgSrc": "TemplateData/favicon.ico",
         "title": "Gearsofbabies",
         "htmlFile": "index.html"
     },
@@ -979,7 +979,7 @@
     },
     {
         "id": "geogeo",
-        "imgSrc": "TemplateData\\favicon.ico",
+        "imgSrc": "TemplateData/favicon.ico",
         "title": "Geogeo",
         "htmlFile": "index.html"
     },
@@ -1003,7 +1003,7 @@
     },
     {
         "id": "georgeandtheprinter",
-        "imgSrc": "img\\icon.png",
+        "imgSrc": "img/icon.png",
         "title": "Georgeandtheprinter",
         "htmlFile": "index.html"
     },
@@ -1015,7 +1015,7 @@
     },
     {
         "id": "gimme-the-airpod",
-        "imgSrc": "img\\airpod.png",
+        "imgSrc": "img/airpod.png",
         "title": "Gimme The Airpod",
         "htmlFile": "index.html"
     },
@@ -1051,7 +1051,7 @@
     },
     {
         "id": "google-snake",
-        "imgSrc": "assets\\apple_00.png",
+        "imgSrc": "assets/apple_00.png",
         "title": "Google Snake",
         "htmlFile": "index.html"
     },
@@ -1069,7 +1069,7 @@
     },
     {
         "id": "grindcraft",
-        "imgSrc": "assets\\grindcraft2x.png",
+        "imgSrc": "assets/grindcraft2x.png",
         "title": "Grindcraft",
         "htmlFile": "index.html"
     },
@@ -1117,9 +1117,9 @@
     },
     {
         "id": "hellscaper",
-        "imgSrc": "Hellscaper WebGL 4-19-23\\TemplateData\\favicon.ico",
+        "imgSrc": "Hellscaper WebGL 4-19-23/TemplateData/favicon.ico",
         "title": "Hellscaper",
-        "htmlFile": "Hellscaper WebGL 4-19-23\\index.html"
+        "htmlFile": "Hellscaper WebGL 4-19-23/index.html"
     },
     {
         "id": "hexempire",
@@ -1135,7 +1135,7 @@
     },
     {
         "id": "highrisehop",
-        "imgSrc": "assets\\gfx\\enemy_atlas.png",
+        "imgSrc": "assets/gfx/enemy_atlas.png",
         "title": "Highrisehop",
         "htmlFile": "index.html"
     },
@@ -1165,7 +1165,7 @@
     },
     {
         "id": "idle-breakout",
-        "imgSrc": "assets\\Coding_BreakOut1_texture_0.png",
+        "imgSrc": "assets/Coding_BreakOut1_texture_0.png",
         "title": "Idle Breakout",
         "htmlFile": "index.html"
     },
@@ -1177,7 +1177,7 @@
     },
     {
         "id": "idledices",
-        "imgSrc": "images\\icon128.png",
+        "imgSrc": "images/icon128.png",
         "title": "Idledices",
         "htmlFile": "index.html"
     },
@@ -1201,7 +1201,7 @@
     },
     {
         "id": "invite-the-blackbird",
-        "imgSrc": "TemplateData\\favicon.ico",
+        "imgSrc": "TemplateData/favicon.ico",
         "title": "Invite The Blackbird",
         "htmlFile": "index.html"
     },
@@ -1255,7 +1255,7 @@
     },
     {
         "id": "krunker",
-        "imgSrc": "img\\favicon.png",
+        "imgSrc": "img/favicon.png",
         "title": "Krunker",
         "htmlFile": "index.html"
     },
@@ -1273,9 +1273,9 @@
     },
     {
         "id": "legacyflashgames",
-        "imgSrc": "rogers\\R_house\\rhimages\\cookies1_135.jpg",
+        "imgSrc": "rogers/R_house/rhimages/cookies1_135.jpg",
         "title": "Legacyflashgames",
-        "htmlFile": "rogers\\R_house\\buildNeighborConstruction (10).html"
+        "htmlFile": "rogers/R_house/buildNeighborConstruction (10).html"
     },
     {
         "id": "level13",
@@ -1303,19 +1303,19 @@
     },
     {
         "id": "madalin-stunt-cars-2",
-        "imgSrc": "img\\logo.jpg",
+        "imgSrc": "img/logo.jpg",
         "title": "Madalin Stunt Cars 2",
         "htmlFile": "index.html"
     },
     {
         "id": "madalin-stunt-cars-3",
-        "imgSrc": "img\\index.jpg",
+        "imgSrc": "img/index.jpg",
         "title": "Madalin Stunt Cars 3",
         "htmlFile": "index.html"
     },
     {
         "id": "mario",
-        "imgSrc": "Fonts\\pressstart2p-webfont.svg",
+        "imgSrc": "Fonts/pressstart2p-webfont.svg",
         "title": "Mario",
         "htmlFile": "index.html"
     },
@@ -1381,7 +1381,7 @@
     },
     {
         "id": "minesweeper",
-        "imgSrc": "img\\minesweeper.png",
+        "imgSrc": "img/minesweeper.png",
         "title": "Minesweeper",
         "htmlFile": "index.html"
     },
@@ -1435,7 +1435,7 @@
     },
     {
         "id": "motox3m2",
-        "imgSrc": "assets\\atlases\\x1\\cars_game.png",
+        "imgSrc": "assets/atlases/x1/cars_game.png",
         "title": "Motox3M2",
         "htmlFile": "index.html"
     },
@@ -1483,13 +1483,13 @@
     },
     {
         "id": "OfflineParadise",
-        "imgSrc": "assets\\icon.jpeg",
+        "imgSrc": "assets/icon.jpeg",
         "title": "Offlineparadise",
         "htmlFile": "index.html"
     },
     {
         "id": "om-bounce",
-        "imgSrc": "assets\\icon.jpeg",
+        "imgSrc": "assets/icon.jpeg",
         "title": "Om Bounce",
         "htmlFile": "index.html"
     },
@@ -1621,7 +1621,7 @@
     },
     {
         "id": "planetlife",
-        "imgSrc": "images\\backgrounds\\BG_AlmostBlack.png",
+        "imgSrc": "images/backgrounds/BG_AlmostBlack.png",
         "title": "Planetlife",
         "htmlFile": "index.html"
     },
@@ -1645,7 +1645,7 @@
     },
     {
         "id": "poom",
-        "imgSrc": "img\\buttons.png",
+        "imgSrc": "img/buttons.png",
         "title": "Poom",
         "htmlFile": "index.html"
     },
@@ -1675,13 +1675,13 @@
     },
     {
         "id": "push-the-square",
-        "imgSrc": "img\\icon.png",
+        "imgSrc": "img/icon.png",
         "title": "Push The Square",
         "htmlFile": "index.html"
     },
     {
         "id": "push-your-luck",
-        "imgSrc": "assets\\favicon.ico",
+        "imgSrc": "assets/favicon.ico",
         "title": "Push Your Luck",
         "htmlFile": "index.html"
     },
@@ -1771,15 +1771,15 @@
     },
     {
         "id": "rooftop-snipers",
-        "imgSrc": "img\\preview.png",
+        "imgSrc": "img/preview.png",
         "title": "Rooftop Snipers",
         "htmlFile": "index.html"
     },
     {
         "id": "roommate",
-        "imgSrc": "31\\TemplateData\\favicon.ico",
+        "imgSrc": "31/TemplateData/favicon.ico",
         "title": "Roommate",
-        "htmlFile": "31\\index.html"
+        "htmlFile": "31/index.html"
     },
     {
         "id": "run",
@@ -1819,7 +1819,7 @@
     },
     {
         "id": "sandboxels",
-        "imgSrc": "icons\\80x15.png",
+        "imgSrc": "icons/80x15.png",
         "title": "Sandboxels",
         "htmlFile": "404.html"
     },
@@ -1843,7 +1843,7 @@
     },
     {
         "id": "scrapmetal",
-        "imgSrc": "img\\1run4progresslogo-light_orig.png",
+        "imgSrc": "img/1run4progresslogo-light_orig.png",
         "title": "Scrapmetal",
         "htmlFile": "index.html"
     },
@@ -1861,7 +1861,7 @@
     },
     {
         "id": "shellshockers",
-        "imgSrc": "img\\favicon.jpg",
+        "imgSrc": "img/favicon.jpg",
         "title": "Shellshockers",
         "htmlFile": "index.html"
     },
@@ -1933,7 +1933,7 @@
     },
     {
         "id": "smashkarts",
-        "imgSrc": "images\\favicon.png",
+        "imgSrc": "images/favicon.png",
         "title": "Smashkarts",
         "htmlFile": "index.html"
     },
@@ -1945,7 +1945,7 @@
     },
     {
         "id": "snowbattle",
-        "imgSrc": "img\\logo.png",
+        "imgSrc": "img/logo.png",
         "title": "Snowbattle",
         "htmlFile": "index.html"
     },
@@ -1969,7 +1969,7 @@
     },
     {
         "id": "soldier-legend",
-        "imgSrc": "images\\ach_des_bg-sheet0.png",
+        "imgSrc": "images/ach_des_bg-sheet0.png",
         "title": "Soldier Legend",
         "htmlFile": "index.html"
     },
@@ -1981,13 +1981,13 @@
     },
     {
         "id": "sort-the-court",
-        "imgSrc": "img\\icon.png",
+        "imgSrc": "img/icon.png",
         "title": "Sort The Court",
         "htmlFile": "index.html"
     },
     {
         "id": "soundboard",
-        "imgSrc": "img\\better_eye.jpeg",
+        "imgSrc": "img/better_eye.jpeg",
         "title": "Soundboard",
         "htmlFile": "index.html"
     },
@@ -2023,7 +2023,7 @@
     },
     {
         "id": "ssurferbotleg",
-        "imgSrc": "TemplateData\\favicon.ico",
+        "imgSrc": "TemplateData/favicon.ico",
         "title": "Ssurferbotleg",
         "htmlFile": "index.html"
     },
@@ -2041,7 +2041,7 @@
     },
     {
         "id": "starve",
-        "imgSrc": "img\\favicon.png",
+        "imgSrc": "img/favicon.png",
         "title": "Starve",
         "htmlFile": "index.html"
     },
@@ -2155,13 +2155,13 @@
     },
     {
         "id": "surviv",
-        "imgSrc": "img\\favicon.png",
+        "imgSrc": "img/favicon.png",
         "title": "Surviv",
         "htmlFile": "index.html"
     },
     {
         "id": "SURVIVOR",
-        "imgSrc": "image\\badguy-bird.png",
+        "imgSrc": "image/badguy-bird.png",
         "title": "Survivor",
         "htmlFile": "editor.html"
     },
@@ -2173,7 +2173,7 @@
     },
     {
         "id": "swerve",
-        "imgSrc": "img\\favicon.jpg",
+        "imgSrc": "img/favicon.jpg",
         "title": "Swerve",
         "htmlFile": "index.html"
     },
@@ -2203,7 +2203,7 @@
     },
     {
         "id": "tanuki-sunset",
-        "imgSrc": "img\\cover.png",
+        "imgSrc": "img/cover.png",
         "title": "Tanuki Sunset",
         "htmlFile": "index.html"
     },
@@ -2311,7 +2311,7 @@
     },
     {
         "id": "townscaper",
-        "imgSrc": "Build\\WebGL.jpg",
+        "imgSrc": "Build/WebGL.jpg",
         "title": "Townscaper",
         "htmlFile": "index.html"
     },
@@ -2323,7 +2323,7 @@
     },
     {
         "id": "tube-jumpers",
-        "imgSrc": "img\\icon.jpg",
+        "imgSrc": "img/icon.jpg",
         "title": "Tube Jumpers",
         "htmlFile": "index.html"
     },
@@ -2419,7 +2419,7 @@
     },
     {
         "id": "wbwwb",
-        "imgSrc": "sprites\\bg.png",
+        "imgSrc": "sprites/bg.png",
         "title": "Wbwwb",
         "htmlFile": "index.html"
     },
@@ -2431,7 +2431,7 @@
     },
     {
         "id": "webcleaner",
-        "imgSrc": "TemplateData\\favicon.ico",
+        "imgSrc": "TemplateData/favicon.ico",
         "title": "Webcleaner",
         "htmlFile": "index.html"
     },
@@ -2443,13 +2443,13 @@
     },
     {
         "id": "webretro",
-        "imgSrc": "assets\\bar.png",
+        "imgSrc": "assets/bar.png",
         "title": "Webretro",
         "htmlFile": "index.html"
     },
     {
         "id": "webxash",
-        "imgSrc": "assets\\hl-bright-89d6688d.svg",
+        "imgSrc": "assets/hl-bright-89d6688d.svg",
         "title": "Webxash",
         "htmlFile": "index.html"
     },
@@ -2461,19 +2461,19 @@
     },
     {
         "id": "wolf2d",
-        "imgSrc": "icons\\[icon-128].png",
+        "imgSrc": "icons/[icon-128].png",
         "title": "Wolf2D",
         "htmlFile": "index.html"
     },
     {
         "id": "wolf3d",
-        "imgSrc": "art\\attack.png",
+        "imgSrc": "art/attack.png",
         "title": "Wolf3D",
         "htmlFile": "index.html"
     },
     {
         "id": "wordle",
-        "imgSrc": "img\\logo_144x144.png",
+        "imgSrc": "img/logo_144x144.png",
         "title": "Wordle",
         "htmlFile": "index.html"
     },
@@ -2491,7 +2491,7 @@
     },
     {
         "id": "wounded-summer-baby-edition",
-        "imgSrc": "TemplateData\\favicon.ico",
+        "imgSrc": "TemplateData/favicon.ico",
         "title": "Wounded Summer Baby Edition",
         "htmlFile": "index.html"
     },
@@ -2521,7 +2521,7 @@
     },
     {
         "id": "you-are-bezos",
-        "imgSrc": "img\\banner.png",
+        "imgSrc": "img/banner.png",
         "title": "You Are Bezos",
         "htmlFile": "index.html"
     },
