@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "imgSrc": "favicon.ico",
+        "imgSrc": "cover.png",
         "title": "1",
         "htmlFile": "index.html"
     },
@@ -9,6 +9,72 @@
         "id": "10-minutes-till-dawn",
         "imgSrc": "background.png",
         "title": "10 Minutes Till Dawn",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "10minutestilldawn",
+        "imgSrc": "background.png",
+        "title": "10Minutestilldawn",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "125",
+        "imgSrc": "fonts/minecrafter/License.png",
+        "title": "125",
+        "htmlFile": "404.html"
+    },
+    {
+        "id": "13",
+        "imgSrc": "cover.png",
+        "title": "13",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "13eagmob",
+        "imgSrc": "favicon.ico",
+        "title": "13Eagmob",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "15eagmob",
+        "imgSrc": "favicon.ico",
+        "title": "15Eagmob",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "17",
+        "imgSrc": "cover.png",
+        "title": "17",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "17eagmob",
+        "imgSrc": "favicon.ico",
+        "title": "17Eagmob",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "18eagmob",
+        "imgSrc": "favicon.png",
+        "title": "18Eagmob",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "1defense",
+        "imgSrc": "cover.png",
+        "title": "1Defense",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "1hobo",
+        "imgSrc": "cover.png",
+        "title": "1Hobo",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "1on1soccer",
+        "imgSrc": "logo.jpg",
+        "title": "1On1Soccer",
         "htmlFile": "index.html"
     },
     {
@@ -21,6 +87,12 @@
         "id": "1v1space",
         "imgSrc": "splash.png",
         "title": "1V1Space",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "2000si",
+        "imgSrc": "cover.png",
+        "title": "2000Si",
         "htmlFile": "index.html"
     },
     {
@@ -42,9 +114,51 @@
         "htmlFile": "index.html"
     },
     {
+        "id": "2d",
+        "imgSrc": "cover.png",
+        "title": "2D",
+        "htmlFile": "index.html"
+    },
+    {
         "id": "2drocketleague",
         "imgSrc": "2D-rocket.png",
         "title": "2Drocketleague",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "2flash",
+        "imgSrc": "cover.png",
+        "title": "2Flash",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "2hobo",
+        "imgSrc": "cover.png",
+        "title": "2Hobo",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "2sadv",
+        "imgSrc": "cover.png",
+        "title": "2Sadv",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "2sonic",
+        "imgSrc": "cover.svg",
+        "title": "2Sonic",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "3flash",
+        "imgSrc": "cover.png",
+        "title": "3Flash",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "3hobo",
+        "imgSrc": "cover.png",
+        "title": "3Hobo",
         "htmlFile": "index.html"
     },
     {
@@ -54,14 +168,74 @@
         "htmlFile": "404.html"
     },
     {
+        "id": "3line",
+        "imgSrc": "cover.png",
+        "title": "3Line",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "3sadv",
+        "imgSrc": "cover.png",
+        "title": "3Sadv",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "3sonic",
+        "imgSrc": "cover.png",
+        "title": "3Sonic",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "4flash",
+        "imgSrc": "cover.png",
+        "title": "4Flash",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "4hobo",
+        "imgSrc": "cover.png",
+        "title": "4Hobo",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "5flash",
+        "imgSrc": "cover.png",
+        "title": "5Flash",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "5hobo",
+        "imgSrc": "cover.png",
+        "title": "5Hobo",
+        "htmlFile": "index.html"
+    },
+    {
         "id": "60sburgerrun",
         "imgSrc": "icon.png",
         "title": "60Sburgerrun",
         "htmlFile": "index.html"
     },
     {
+        "id": "6flash",
+        "imgSrc": "cover.png",
+        "title": "6Flash",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "6hobo",
+        "imgSrc": "cover.png",
+        "title": "6Hobo",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "7hobo",
+        "imgSrc": "cover.png",
+        "title": "7Hobo",
+        "htmlFile": "index.html"
+    },
+    {
         "id": "9007199254740992",
-        "imgSrc": "favicon.ico",
+        "imgSrc": "cover.png",
         "title": "9007199254740992",
         "htmlFile": "index.html"
     },
@@ -96,10 +270,22 @@
         "htmlFile": "browserWarning.html"
     },
     {
+        "id": "adofai",
+        "imgSrc": "splash.png",
+        "title": "Adofai",
+        "htmlFile": "index.html"
+    },
+    {
         "id": "adrenalinechallenge",
         "imgSrc": "adrenalinechallenge.jpg",
         "title": "Adrenalinechallenge",
         "htmlFile": "index.html"
+    },
+    {
+        "id": "adventure",
+        "imgSrc": "cover.png",
+        "title": "Adventure",
+        "htmlFile": "Adventure (1978) (Atari).html"
     },
     {
         "id": "adventure-capitalist",
@@ -114,6 +300,12 @@
         "htmlFile": "index.html"
     },
     {
+        "id": "advgta",
+        "imgSrc": "cover.png",
+        "title": "Advgta",
+        "htmlFile": "index.html"
+    },
+    {
         "id": "ageofwar",
         "imgSrc": "ageofwar.jpg",
         "title": "Ageofwar",
@@ -123,6 +315,12 @@
         "id": "ageofwar2",
         "imgSrc": "ageofwar.jpg",
         "title": "Ageofwar2",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "al2",
+        "imgSrc": "favicon.ico",
+        "title": "Al2",
         "htmlFile": "index.html"
     },
     {
@@ -156,6 +354,18 @@
         "htmlFile": "index.html"
     },
     {
+        "id": "amongus",
+        "imgSrc": "amgojs]_.png",
+        "title": "Amongus",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "amongusnew",
+        "imgSrc": "amgojs]_.png",
+        "title": "Amongusnew",
+        "htmlFile": "index.html"
+    },
+    {
         "id": "angelunder",
         "imgSrc": "TemplateData/babusgames-logo.png",
         "title": "Angelunder",
@@ -165,6 +375,12 @@
         "id": "angry-sharks",
         "imgSrc": "assets/favicon/icon-36x36.png",
         "title": "Angry Sharks",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "animalcrossingwildworld",
+        "imgSrc": "animalcrossingwildworld.png",
+        "title": "Animalcrossingwildworld",
         "htmlFile": "index.html"
     },
     {
@@ -1641,6 +1857,12 @@
         "id": "polybranch",
         "imgSrc": "Arrow_keys.png",
         "title": "Polybranch",
+        "htmlFile": "index.html"
+    },
+    {
+        "id": "polytrack",
+        "imgSrc": "cover.jpg",
+        "title": "Polytrack",
         "htmlFile": "index.html"
     },
     {

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+        <title>Among Us Online</title>
+    <meta charset="utf-8">
+
+	<meta name="theme-color" content="#ffffff">
+	
+    <link rel="stylesheet" href="https://amongus-online.net/css/main-c.css">
+    <link rel="stylesheet" href="https://amongus-online.net/css/main-g.css">
+
+	    <link rel="stylesheet" href="https://amongus-online.net/native_games/amongus/TemplateData/style.css">
+    <script src="https://amongus-online.net/js/UnityProgress.js"></script>
+    <script src="https://amongus-online.net/js/UnityLoader.js"></script>
+
+	<script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Game.json", {onProgress: UnityProgress});
+    </script>
+    	
+    <style>
+		html, body {
+			margin:0;
+			padding:0;
+		}
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+		.main-content {
+			margin: 0px auto;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+        .webgl-content { width: 960px; height: 600px; }
+		
+
+        @media  screen and (max-width: 960px) {
+			.webgl-content {
+				height: 100vh;
+			}
+
+			#mainGames {
+				display: none;
+			}
+		}
+    </style>
+
+	
+    
+  </head>
+  <body>
+    <div class="webgl-content" id="unityContainer" style="padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);"><canvas style="width: 100%; height: 100%; cursor: default;" id="#canvas" width="1920" height="1200"></canvas><div class="logo Dark" style="display: none;"></div><div class="progress Dark" style="display: none;"><div class="empty" style="width: 0%;"></div><div class="full" style="width: 100%;"></div></div></div>
+    <script>
+        function cpmstarAPI() {
+
+        }
+    </script>
+  </body>
+</html>

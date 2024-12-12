@@ -1,0 +1,40 @@
+{
+  "background_color": "#ffffff",
+  "description": "Play as Sonic, Tails or Knuckles as you travel throughout Westside Island and collect the seven Chaos Emeralds to defeat the nefarious Dr. Eggman!",
+  "dir": "ltr",
+  "id": "/",
+  "display": "standalone",
+  "name": "Sonic 2 WASM",
+  "orientation": "landscape",
+  "scope": "/Sonic-2-WASM/",
+  "short_name": "Sonic 2",
+  "start_url": "/Sonic-2-WASM/",
+  "theme_color": "#ffcd37",
+   "prefer_related_applications": false,
+  "categories": [],
+  "screenshots": [],
+ "icons": [    
+      {
+          "src": "icon/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "icon/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      },
+      {
+        "src": "icon/android-chrome-maskable-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "icon/android-chrome-maskable-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ]
+  }
