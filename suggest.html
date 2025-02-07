@@ -6,36 +6,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="Aster logo.ico" />
+    <link href="style.css" rel="stylesheet" />
     <script src="/js/all.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/themes.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D60Y5MK0EM"></script>
+    <script src="/js/loader.js"></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D60Y5MK0EM"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-D60Y5MK0EM");
-</script>
-<title>Aster</title>
 <body>
-    <nav>
-        <a href="index.html"><i>Home</i></a>
-        <a href="games.html"><i>Games</i></a>
-        <a href="hacks.html"><i>Hacks</i></a>
-        <a href="settings.html"><i>Settings</i></a>
-        <a href="about.html"><i>About</i></a>
-    </nav>
-    <h1>This is a google form for right now</h1>
-    <br />
-    <br />
-    <br />
-    <div class="iframe-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeojgm2BYk1QxtAFRQ0F1TjN_s5uG_6Z8TWL9-YywBkRvOAlg/viewform?embedded=true" width="640" height="586" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div id="originalContent" class="content">
+        <h1>This is a google form for right now</h1>
+        <br />
+        <br />
+        <br />
+        <div class="iframe-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeojgm2BYk1QxtAFRQ0F1TjN_s5uG_6Z8TWL9-YywBkRvOAlg/viewform?embedded=true" width="640" height="586" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
     </div>
+    <script>document.addEventListener('DOMContentLoaded', loadBase);</script>
 </body>
 </html>

@@ -1,102 +1,79 @@
 <!DOCTYPE html>
 <html class="sl-theme-dark" lang="en">
-  <meta charset="utf-8" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
-  <head>
-    <!-- initialize theme vars
-    https://coolors.co/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff -->
-
-    <!-- initialize externals -->
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" />
+    <link href="style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
-
-    <!-- initialize my stuff -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script src="/js/all.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/themes.js"></script>
     <script src="/js/cloaks.js"></script>
-    <script src="/js/themes.js"></script>
-    <link href="style.css" rel="stylesheet" />
-
-    <!-- seo + other things -->
+    <script src="/js/loader.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D60Y5MK0EM"></script>
     <title>Settings</title>
-    <link rel="icon" href="/favicon.ico" />
-
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <!-- toastify -->
-    <script></script>
-  </head>
-
-  <body>
-    <nav>
-      <a href="index.html"><i>Home</i></a>
-      <a href="games.html"><i>Games</i></a>
-      <a href="hacks.html"><i>Hacks</i></a>
-      <a href="settings.html"><i>Settings</i></a>
-      <a id="blank" href="#"><i>Open Blank</i></a>
-      <a href="about.html"><i>About</i></a>
-    </nav>
-
-    <main>
-      <h1>Settings</h1>
-      <form action="javascript:setCloakCookie();">
-        <h3>Website Name</h3>
-        <input type="text" id="webname" name="webname" placeholder="Aster" /><br />
-        <h3>Website Icon</h3>
-        <input type="text" id="webicon" name="webicon" placeholder="https://astergames.online" /><br />
-        <h3>Or select a preset:</h3>
-        <select id="presetCloaks">
-          <option>Select a preset:</option>
-          <option value="google">Google</option>
-          <option value="canvas">Canvas</option>
-          <option value="desmos">Desmos</option>
-          <option value="drive">Google Drive</option>
-          <option value="classroom">Google Classroom</option>
-          <option value="newtab">New Tab</option>
-          <option value="docs">Google Docs</option>
-          <option value="edpuzzle">Edpuzzle</option>
-          <option value="khan">Khan Academy</option>
-          <option value="quizlet">Quizlet</option>
-          <option value="schoology">Schoology</option>
-        </select>
+</head>
+<body>
+    <div id="originalContent" class="content">
+        <h1>Settings</h1>
+        <form action="javascript:setCloakCookie();">
+            <h3>Website Name</h3>
+            <input type="text" id="webname" name="webname" placeholder="Aster" /><br />
+            <h3>Website Icon</h3>
+            <input type="text" id="webicon" name="webicon" placeholder="https://astergames.online" /><br />
+            <h3>Or select a preset:</h3>
+            <select id="presetCloaks">
+                <option>Select a preset:</option>
+                <option value="google">Google</option>
+                <option value="canvas">Canvas</option>
+                <option value="desmos">Desmos</option>
+                <option value="drive">Google Drive</option>
+                <option value="classroom">Google Classroom</option>
+                <option value="newtab">New Tab</option>
+                <option value="docs">Google Docs</option>
+                <option value="edpuzzle">Edpuzzle</option>
+                <option value="khan">Khan Academy</option>
+                <option value="quizlet">Quizlet</option>
+                <option value="schoology">Schoology</option>
+            </select>
+            <br />
+            <input id="websubmit" class="submit" type="submit" value="Set Tab Cloak" />
+        </form>
+        <button onclick="javascript:clearCloak();">Clear your current tab cloak</button>
         <br />
-        <input id="websubmit" class="submit" type="submit" value="Set Tab Cloak" />
-      </form>
-      <button onclick="javascript:clearCloak();">Clear your current tab cloak</button>
-      <br />
-      <div class="samerow">
-        <input type="checkbox" id="discordIcon" name="discordIcon" />
-        <label for="discordIcon">Disable Discord Icon</label><br />
-      </div>
-      <div class="samerow">
-        <input type="checkbox" id="blockClose" name="blockClose" />
-        <label for="blockClose">Block tab from being closed</label><br />
-      </div>
-      <div class="samerow">
-        <input type="checkbox" id="tabDisguise" name="tabDisguise" />
-        <label for="tabDisguise">Disguise your tab when you click off (currently only Google)</label><br />
-      </div>
-      <br />
-      <form action="javascript:setPanicMode();">
-        <h3 for="panic">Website URL</h3>
-        <input type="text" id="panic" name="panic" placeholder="https://google.com" /><br />
-        <input id="panic" class="submit" type="submit" value="Set Panic Mode" />
-      </form>
-      <form action="javascript:setPassword();">
-        <h3 for="pass">Password to access website</h3>
-        <input type="text" id="pass" name="pass" placeholder="password" /><br />
-        <p>If someone tries to click on the URL from your browser, it will require a password to access the website.</p>
-        <p>If you type in the wrong password it wil redirect to google</p>
-        <input id="setPass" class="submit" type="submit" value="Set Password" />
-        <button id="delPass" onclick="delPassword()">Delete Password</button>
-      </form>
-    </main>
-  </body>
-  <footer>
-    <a href="https://github.com/Awesome-XV/Aster"><i>Github</i></a>
-    <a href="https://aster.betteruptime.com/"><i>Site Status</i></a>
-  </footer>
+        <div class="samerow">
+            <input type="checkbox" id="discordIcon" name="discordIcon" />
+            <label for="discordIcon">Disable Discord Icon</label><br />
+        </div>
+        <div class="samerow">
+            <input type="checkbox" id="blockClose" name="blockClose" />
+            <label for="blockClose">Block tab from being closed</label><br />
+        </div>
+        <div class="samerow">
+            <input type="checkbox" id="tabDisguise" name="tabDisguise" />
+            <label for="tabDisguise">Disguise your tab when you click off (currently only Google)</label><br />
+        </div>
+        <br />
+        <form action="javascript:setPanicMode();">
+            <h3 for="panic">Website URL</h3>
+            <input type="text" id="panic" name="panic" placeholder="https://google.com" /><br />
+            <input id="panic" class="submit" type="submit" value="Set Panic Mode" />
+        </form>
+        <form action="javascript:setPassword();">
+            <h3 for="pass">Password to access website</h3>
+            <input type="text" id="pass" name="pass" placeholder="password" /><br />
+            <p>If someone tries to click on the URL from your browser, it will require a password to access the website.</p>
+            <p>If you type in the wrong password it wil redirect to google</p>
+            <input id="setPass" class="submit" type="submit" value="Set Password" />
+            <button id="delPass" onclick="delPassword()">Delete Password</button>
+        </form>
+    </div>
+    <script>document.addEventListener('DOMContentLoaded', loadBase);</script>
+</body>
 </html>

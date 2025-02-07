@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="Aster logo.ico" />
-    <link href="about.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <script src="/js/all.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/themes.js"></script>
@@ -15,17 +15,19 @@
     <script src="/js/loader.js"></script>
 </head>
 <body>
-    <div id="originalContent" class="content">
-        <h1 class="credit">Credits</h1>
-        <h2>Developers</h2>
-        <div>
-            <a class="devs" href="https://github.com/Awesome-XV" style="text-decoration: none;">
-                <img src="credits/awesome-xv.webp" label="awesome" style="width: 100px; height: 100px; border-radius: 50%;" />
-                <p style="margin: 0;">Awesome-XV</p>
-            </a>
-        </div>
-        <h3 class="credit">Credit goes to selenite for the JS</h3>
-    </div>
-    <script>document.addEventListener('DOMContentLoaded', loadBase);</script>
+    <nav>
+        <a href="index.html"><i>Home</i></a>
+        <a href="games.html"><i>Games</i></a>
+        <a href="hacks.html"><i>Hacks</i></a>
+        <a href="settings.html"><i>Settings</i></a>
+        <a id="blank" href="#"><i>Open Blank</i></a>
+        <a href="about.html"><i>About</i></a>
+    </nav>
+    <!-- Page-specific content will be inserted here -->
+    <div class="content" id="content"></div>
+    <footer>
+        <a href="https://github.com/Awesome-XV/Aster"><i>Github</i></a>
+        <a href="https://aster.betteruptime.com/"><i>Site Status</i></a>
+    </footer>
 </body>
 </html>

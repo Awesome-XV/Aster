@@ -9,6 +9,8 @@ body {
   text-align: center;
   font-family: "Contrail One", sans-serif;
   justify-content: space-between;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
 
 h1 {
@@ -273,4 +275,13 @@ input[type="text"] {
 /* Add padding to the last element in the main content area */
 main > *:last-child {
   padding-bottom: 50px;
+}
+
+.loading {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+html {
+  background-color: black;
 }
