@@ -49,19 +49,29 @@ nav a {
 }
 
 nav {
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-color: #1a1a1a;
   box-shadow: #1a1a1a;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
 }
 
 footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #1a1a1a;
   box-shadow: #1a1a1a;
   text-align: center;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 footer a {
@@ -73,6 +83,9 @@ footer a {
 
 .content {
   flex: 1;
+  margin-top: 60px; /* Add space for fixed nav */
+  margin-bottom: 60px; /* Add space for fixed footer */
+  width: 100%;
 }
 
 .cloaks {
@@ -285,3 +298,11 @@ main > *:last-child {
 html {
   background-color: black;
 }
+
+#proxyFrame {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: block;
+}
+

@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="Aster logo.ico" />
-    <link href="style.css" rel="stylesheet" />
-    <script src="/js/all.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/themes.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D60Y5MK0EM"></script>
+    <title>Aster</title>
+    <style>
+        html { background: black; }
+        body { opacity: 0; }
+        #originalContent { display: none; }
+    </style>
     <script src="/js/loader.js"></script>
+    <link href="static/src.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png">
+    <script src="src/js/fs.js"></script>
+    <script src="src/js/refresh-page.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
 </head>
 <body>
-    <nav>
-        <a href="index.html"><i>Home</i></a>
-        <a href="games.html"><i>Games</i></a>
-        <a href="hacks.html"><i>Hacks</i></a>
-        <a href="settings.html"><i>Settings</i></a>
-        <a id="blank" href="#"><i>Open Blank</i></a>
-        <a href="about.html"><i>About</i></a>
-    </nav>
-    <div class="content" id="content">
-        <h1>Proxy is coming soon</h1>
+    <div id="originalContent" class="content">
+        <iframe id="proxyFrame" src="static/index.html" width="80vw" height="80vh" style="width: 1278px; height: 539px;"></iframe>
+        <br>
+        <br>
+        <img class="svg" src="src/images/left.svg" onclick="history.back()">
+        <img class="svg" src="src/images/reload.svg" onclick="refreshFrame()">
+        <img class="svg" src="src/images/right.svg" onclick="history.forward()">
+        <img class="svg" src="src/images/fullscreen.svg" onclick="toggleFullscreen()">
     </div>
-    <footer>
-        <a href="https://github.com/Awesome-XV/Aster"><i>Github</i></a>
-        <a href="https://aster.betteruptime.com/"><i>Site Status</i></a>
-    </footer>
+    <script>document.addEventListener('DOMContentLoaded', loadBase);</script>
 </body>
 </html>
