@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Prompt;
+  src: url(/fonts/prompt.ttf);
+}
+@font-face {
+  font-family: Fredoka;
+  src: url(/fonts/fredoka.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+html {
+ background-color: #000000;
+ color: white;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ margin: 0;
+ padding: 0;
+}
+
+h1,h2,h3 {
+ font-family: "Contrail One", sans-serif;
+ color: white;
+ margin-bottom: 20px; 
+ margin-top: 100px;
+}
+
+h4,h5,p,a {
+  font-family: "Contrail One", sans-serif;
+ color: white;
+}
+
+#proxyFrame {
+  border: none;
+  text-align: center;
+  justify-content: center;
+}
+
+#uv-address {
+    background-color: transparent;
+    border: 1.5px #ffffff solid;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    font-family: "Contrail One", sans-serif;
+    background-color: white;
+    outline: none;
+    transition: hover .2s;
+    width: 500px;
+    padding-left: 40px;
+}
+
+.bookmarks {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px;
+    justify-content: space-between;
+  }
+
+  .bookmarks img {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .bookmarks img:hover {
+  transition: .3s;
+  transform: scale(1.1);
+  }
+
+.bookmarks p:hover {
+transform: scale(1.1);
+transition: .3s;
+}
+
+.svg {
+filter: invert(1);
+width: 30px;
+height: 30px;
+}
+
+.svg:hover {
+cursor: pointer;
+transform: scale(1.1);
+transition: .3s;
+filter: invert(.4);
+}
+.dot {
+    box-shadow: 0 0 150px 100px #00bbff;
+	border-radius: 50%;
+	height: 320px;
+	width: 320px;
+	background-image: radial-gradient(
+		farthest-corner at 50% 50%,
+		#ffffff, #009dff
+	);
+	background-blend-mode: multiply;
+	filter: blur(50px) contrast(1.1);
+	position: fixed;
+	transform: translate(-50%, -50%);
+	left: 50vw;
+	top: 100vh;
+	position: absolute;
+    z-index: -100;
+}
